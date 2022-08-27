@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TurnOnBulb</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    
+    
+<h2>Switching Tungesten Bulb ON/OFF with Javascript approach </h2>
+<p>We deployed Javascript to turn On and Off 100W bulb</p>
+<p>In this Javascript changes the value of the scr(source code)attribute</p>
+
+<button class="button1"  id="myBtn1">Turn on the Light</button>
+<img id="myimage" src="pickoff.jpg" alt="bulb">
+<button class="button2" id="myBtn2">Turn off the Light</button>
+
+    
+<script type="text/javascript">
+    const btn1 = document.getElementById('myBtn1');
+    const btn2 = document.getElementById('myBtn2');
+    
+    const img = document.getElementById('myimage');
+
+
+
+    btn1.addEventListener('click', ()=>{
+        img.src='pickbulbon.jpg';
+      })
+
+    btn2.addEventListener('click', ()=>{
+        img.src='pickoff.jpg';
+      })
+
+     
+
+</script>
+    
+</body>
+</html>
